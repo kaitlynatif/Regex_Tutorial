@@ -97,7 +97,7 @@ Each component of this regex has a unique responsibility to make sure that a use
 By completing this challenge, you will not only have a better understanding of the email validation regex but also gain experience in setting up and sharing a GitHub Gist.
 
 ## Built With:
-- GitHub Gist: [How to create a gist.](https://help.github.com/en/github/writing-on-github/creating-gists).
+- GitHub Gist: [How to create a gist](https://help.github.com/en/github/writing-on-github/creating-gists).
 - [Video on how to use gists](https://www.youtube.com/watch?v=wc2NlcWjQHw).
 - License Badge: [Shields.io](https://shields.io/)
 - Visual Studio Code: [Website](https://code.visualstudio.com/)
