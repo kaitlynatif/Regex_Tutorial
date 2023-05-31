@@ -5,7 +5,7 @@
 ## Table of Contents:
 - [Description](#Description)
 - [The Challenge](#The-Challenge)
-- [Usage Information](#Usage-Information)
+- [Usage Instructions](#Usage-Instructions)
 - [Installation](#Installation)
 - [Built With](#Built-With)
 - [License](#License)
