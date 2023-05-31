@@ -74,10 +74,10 @@ Each component of this regex has a unique responsibility to make sure that a use
 5. Apply the knowledge gained from the tutorial in your own projects.
 
 ## Deployed GitHub-Gist Link:
-[Deployed GitHub-Gist Link: Click Here](https://gist.github.com/kaitlynatif/531e3800cef130b9d554cab1ccc65bf7)
+Deployed GitHub-Gist Link: [Click Here](https://gist.github.com/kaitlynatif/531e3800cef130b9d554cab1ccc65bf7)
 
 ## GitHub Repository:
-[GitHub Repository: Click Here](https://github.com/kaitlynatif/Regex_Tutorial)
+GitHub Repository: [Click Here](https://github.com/kaitlynatif/Regex_Tutorial)
 
 ## Installation:
 **Set up a GitHub Gist:**
