@@ -11,7 +11,7 @@
 - [License](#License)
 - [Author](#Author)
 
-## Description.
+## Description
 In this Regex Tutorial, you will learn how to validate the featured email address regular expression (regex) **Regex Featured in This Tutorial:** `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`. The tutorial provides a comprehensive breakdown and explanation of each component within the regex, simplifying the validation process for easy understanding. Upon completing this tutorial, you will gain a deeper comprehension of how the regex functions to validate and confirm the entry of a valid email address.
 
 **GitHub Gist: [Click Here](https://gist.github.com/kaitlynatif/531e3800cef130b9d554cab1ccc65bf7)**
