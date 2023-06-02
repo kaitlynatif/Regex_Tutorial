@@ -1,10 +1,10 @@
 # Matching an Email Regex
 
-Welcome to this comprehensive tutorial guide on matching email regular expressions (regex) using JavaScript in the field of Computer Science. Upon completing the tutorial, both newcomers and academics alike will have a clear comprehension and understanding of regex components, achieved through detailed explanations and example analysis. In this tutorial, we will delve into email regex, breaking down the components of a regex pattern designed to validate email addresses and explaining how each part contributes to ensuring accurate and reliable email validation.
+Welcome to this comprehensive tutorial on matching email regular expressions (regex) using JavaScript in the field of Computer Science. Upon completing the tutorial, both newcomers and academics alike will have a clear comprehension and understanding of regex components, achieved through detailed explanations and analysis of examples. In this tutorial, we will delve into email regex, breaking down the components of a regex pattern designed to validate email addresses and explain how each part contributes to ensuring accurate and reliable email validation.
 
 ## Summary
 
-Throughout this tutorial, the featured regular expression (regex) as seen below, will be referenced for analysis in regards to each regex component to ensure new-comers and academics alike are able to understand and grasp material with absolute clarity. The regex components discussed in this document include: anchors, quantifiers, grouping constructs, bracket expressions, character classes, and character escapes.
+Throughout this tutorial, the featured regular expression (regex) as seen below, will be referenced for analysis in regards to each regex component to ensure new-comers and academics alike are able to understand the material with clarity. The regex components discussed in this document include: anchors, quantifiers, grouping constructs, bracket expressions, character classes, and character escapes.
 
 ***The Regex Featured in This Tutorial is Below:***
 ```
@@ -28,7 +28,7 @@ Throughout this tutorial, the featured regular expression (regex) as seen below,
 
 ## Anchors
 
-Regular expressions are powerful tools for matching patterns in text. Anchors, which are special characters in regular expressions, play an essential role in defining the position of the pattern within the input string. In the context of email validation, like in the regex featured in this tutorial `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`, it is crucial to ensure that the entire input string matches the specified pattern, rather than just a part of it.
+Regular expressions are powerful tools for matching patterns in text. Anchors, which are special characters in regular expressions, play an essential role in defining the position of the pattern within the input string. In the context of email validation, like in the regex featured in this tutorial `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`, it is crucial to ensure that the entire input string matches the specified pattern rather than just a part of it.
 
 **Anchors Come in Two Main Types:**
 1. Start Anchor `^`: This asserts that the pattern must match the start of the string.
@@ -151,11 +151,11 @@ The Top-Level Domain follows a valid format and is in compliance with the regex 
 
 ### Conclusion:
 
-In conclusion, the Grouping Constructs section of the tutorial thus far focus on understanding and dissecting our regex pattern `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` for validating email addresses. This regex pattern consists of three main grouping constructs: 1) Local-Part, 2) Domain, and 3) Top-Level Domain. Therefore, each of these groups serves a specific purpose in the validation process. The Local-Part ensures the username portion of the email address follows a valid format, the Domain checks the compliance of the domain name, and the Top-Level Domain verifies the validity of the top-level domain. Thereby, utilizing these grouping constructs, the regex pattern effectively captures and validates different components of an email address, ensuring that it adheres to the accepted standards.
+In conclusion, the Grouping Constructs section of the tutorial focuses on understanding and dissecting our regex pattern `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` for validating email addresses. This regex pattern consists of three main grouping constructs: 1) Local-Part, 2) Domain, and 3) Top-Level Domain. Therefore, each of these groups serves a specific purpose in the validation process. The Local-Part ensures the username portion of the email address follows a valid format, the Domain checks the compliance of the domain name, and the Top-Level Domain verifies the validity of the top-level domain. By utilizing these grouping constructs, the regex pattern effectively captures and validates different components of an email address, ensuring that it adheres to the accepted standards.
 
 ## Bracket Expressions
 
-Bracket expressions are a fundamental concept in regular expressions (regex), used to define a set of characters that can be matched within a single position in a text string. They are denoted by square brackets `[...]`, and any character enclosed within these brackets will become a part of the allowed set. Bracket expressions can contain individual characters, and even define character ranges using a hyphen `-`, such as `a-z` for all lowercase letters or `0-9` for digits. But, what's the purpose? Simply, the bracket expressions, creates flexible patterns that match various combinations of characters in your target text.
+Bracket expressions are a fundamental concept in regular expressions (regex) used to define a set of characters that can be matched within a single position in a text string. They are denoted by square brackets `[...]`, and any character enclosed within these brackets will become a part of the allowed set. Bracket expressions can contain individual characters, and even define character ranges using a hyphen `-`, such as `a-z` for all lowercase letters or `0-9` for digits. Bracket expressions create flexible patterns that match various combinations of characters in your target text.
 
 In our **regex featured in this tutorial:** `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` there are three main bracket expressions:
 
@@ -221,20 +221,20 @@ Now let's break it down according to the bracket expression `[a-z\.]{2,6}`:
 In the example, the bracket expression `[a-z\.]{2,6}` successfully matches the top-level domain part `.edu` of the email address.
 
 #### Conclusion
-In brief, our featured regex `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` efficiently matches valid email addresses by utilizing bracket expressions to define character sets for the username, domain, and top-level domain parts of the email address as we discussed earlier. These bracket expressions, combined with other regex components, ensure proper structure and formality for email addresses, making it a valuable tool in a variety of applications.
+In brief, our featured regex `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` efficiently matches valid email addresses by utilizing bracket expressions to define character sets for the username, domain, and top-level domain parts of the email address as discussed earlier. These bracket expressions, combined with other regex components, ensure proper structure and formality for email addresses, making it a valuable tool in a variety of applications.
 
 ## Character Classes
 
-Character classes, known as character sets, are a short and more concise regular expressions (regex) that represent specific sets of characters. Through the use of character classes, you can simplify and shorten regex patterns, thereby making them readable and easier to understand.
+Character classes, known as character sets, are short and more concise regular expressions (regex) that represent specific sets of characters. Through the use of character classes, you can simplify and shorten regex patterns, thereby making them readable and easier to understand.
 
 In our **regex featured in this tutorial:** `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` uses various regex elements, including `character classes`, `character sets`, `meta characters`, and `repeating character classes`. These elements ensure the regex are assessed and sourced accurately to match the email addresses.
 
 ### Character Classes and Character Sets:
-The featured email regex uses the primary character class: `\d` and `..` Character sets are defined within square brackets, such as `[a-z]`, `[0-9]`, and `[.-]`. These sets represent multiple characters, allowing a single character match from the specified range.
+The featured email regex uses the primary character class: `\d` and `..` Character sets are defined within square brackets, such as `[a-z]`, `[0-9]`, and `[.-]`. These sets represent multiple characters allowing a single character match from the specified range.
 
 **Example:** Consider the following `/[a-zA-Z0-9]/`
 
-This regex pattern matches a single alphanumeric character, which can be an uppercase letter, a lowercase letter, or a digit. The character class `\d` matches a digit, while [a-z] and [A-Z] are character sets that match lowercase and uppercase letters, respectively. Combining these character sets within square brackets creates a pattern that matches any single alphanumeric character.
+This regex pattern matches a single alphanumeric character which can be an uppercase letter, a lowercase letter, or a digit. The character class `\d` matches a digit, while [a-z] and [A-Z] are character sets that match lowercase and uppercase letters, respectively. Combining these character sets within square brackets creates a pattern that matches any single alphanumeric character.
 
 ### Meta Characters Inside Character Classes:
 The meta characters are characters with special meanings in regex, such as the dot `(.)`. Inside character classes, some meta characters lose their special meaning and are treated as literals. In our featured email regex, the hyphen `(-)` and the dot `(.)` are meta characters placed inside character classes `[a-z0-9_.-]` and `[\da-z.-]`. The dot (.) does not need to be escaped with a backslash, and the hyphen is used as a literal character without escaping, as it is placed at the beginning or end of the character set.
@@ -258,9 +258,9 @@ Character classes play a crucial role in making regular expressions more concise
 
 ## The OR Operator
 
-The OR operator, also known as alternation, is a crucial concept in regular expressions for defining alternative patterns. It's represented by the `|` symbol, allowing the regex to match either one pattern or another. Among our regex featured in this tutorial: `^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`, there is no OR-Operator that exists nor explicitly used. Though it is not used, it is important to note for future use, as it is essential to understand its function for more complex patterns to come in your academic and professional career.
+The OR operator, also known as alternation, is a crucial concept in regular expressions for defining alternative patterns. It's represented by the `|` symbol, allowing the regex to match either one pattern or another. Among our regex featured in this tutorial: `^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`, there is no OR-Operator that exists. Though it is not used in this example, it is essential to understand its function for more complex patterns to come in your academic and professional career.
 
-### OR-Operator Usage Purpose:
+### OR-Operator Usage:
 1. Used to specify alternative patterns among regex, enhancing its flexibility and matching capabilities.
 2. Syntax: `|` used to separate alternative patterns in the regex.
 3. E.g: The regex `^(Flying Birds| Non-Flying Birds)$` matches either the string `Flying Birds` or `Non-Flying Birds`, but cannot match both or other strings.
@@ -269,9 +269,9 @@ Crucial for functioning with regular expressions, the OR operator allows the cre
 
 ## Flags
 
-Flags are modifiers which affect the behavior of regular expressions(regex) by enabling or disabling certain features and are appended to the end of the regex pattern, outside the slashes `/`.
+Flags are modifiers which affect the behavior of regular expressions (regex) by enabling or disabling certain features and are appended to the end of the regex pattern, outside the slashes `/`.
 
-Though our **regex featured in this tutorial:** `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` does not use flags, it's important to understand its purpose in regex patterns. Flags are used to control case sensitivity, multiline matching, and global matching. I would advise for any new-comer to learn more about flags, so you are able to enhance your regex knowledge.
+Though our **regex featured in this tutorial:** `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` does not use flags, it's important to understand their purpose in regex patterns. Flags are used to control case sensitivity, multiline matching, and global matching.
 
 ### Flag types you may find in future use:
 1. `g` (global): Enables global matching, regex engine will find all matches in the input string.
@@ -281,8 +281,6 @@ Though our **regex featured in this tutorial:** `/^([a-z0-9_\.-]+)@([\da-z\.-]+)
 5. `u` (unicode): Treats input string as Unicode, enables correct processes of Unicode surrogate pairs.
 6. `y` (sticky): Mandates regex engine ro initiate searching for a match at the exact position specified by the lastIndex property.
 
-We're able to conclude this section by saying are essential in modifying the behavior of patterns found among regex. Although it is not utilized in our **regex featured in this tutorial** `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`, understanding the use of flags will enhance your use regex patterns to accommodate varying requirements and situations.
-
 ## Character Escapes
 
 Character escapes are an essential aspect of regex, allowing for accurate pattern matching by suppressing the special meaning of meta characters and representing characters that cannot be directly typed. In our **regex featured in this tutorial** `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` we can identify the use of character escapes and their purposes:
@@ -291,16 +289,16 @@ Character escapes are an essential aspect of regex, allowing for accurate patter
 The backslash is a common escape character used to treat meta characters as literals in regex. Throughout our featured regex, the dot `(.)` is escaped with a backslash, exactly like this `\.`. Thus ensuring the dot is treated as a literal period instead of a metaphorical wildcard.
 
 ### Meta Characters: 
-Meta characters have significant meaning in regex, such as the dot `(.)`, plus sign `(+)`, and caret `(^)`. When placed among character classes, they often lose their special meanings and behave as though they are regular characters... In our featured email regex, the hyphen `(-)` is used as a literal character inside the character classes `[a-z0-9_\.-]` and `[\da-z\.-]` without needing to be escaped.
+Meta characters have significant meaning in regex, such as the dot `(.)`, plus sign `(+)`, and caret `(^)`. When placed among character classes, they often lose their special meanings and behave as though they are regular characters. In our featured email regex, the hyphen `(-)` is used as a literal character inside the character classes `[a-z0-9_\.-]` and `[\da-z\.-]` without needing to be escaped.
 
 ### Escape sequences: 
-Escape sequences, are characters that can not be directly typed or represented in a string, so escape sequences are the implemented, then used. These sequences start with a backslash `(\)` followed by a letter or combination of letters. In the email regex, `\d` is an escape sequence that represents any digit from `0` to `9`, serving as a shorthand for the use of `[0-9]`.
+Escape sequences, are characters that can not be directly typed or represented in a string. These sequences start with a backslash `(\)` followed by a letter or combination of letters. In the email regex, `\d` is an escape sequence that represents any digit from `0` to `9`, serving as a shorthand for the use of `[0-9]`.
 
-Character escapes serve a crucial role for ensuring accurately matching text patterns by interpreting special characters as literals. They help suppress the special meanings of meta characters and represent characters that can't be directly typed. Thereby, ensuring the proper functioning of regex expressions that contribute to reliable email validation.
+Character escapes serve a crucial role for ensuring accurately matching text patterns by interpreting special characters as literals. They help suppress the special meanings of meta characters and represent characters that can't be directly typed.
 
 ## Email Validation Conclusion
 
-We conclude, the email matching regex **featured in this tutorial:** `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` effectively validates email addresses structure. The pattern consists of several key components that contribute to its effectiveness:
+We conclude that the email matching regex **featured in this tutorial:** `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` effectively validates an email address' structure. The pattern consists of several key components that contribute to its effectiveness:
 
 1. Anchors: `^` and `$` are anchors that match the start and end of the string, respectively.
 2. Quantifiers: `+` and `{2,6}` are quantifiers that denote the number of times a preceding character should appear.
@@ -311,7 +309,7 @@ We conclude, the email matching regex **featured in this tutorial:** `/^([a-z0-9
 7. Flags: There are no flags in this regex, but they could be used to modify pattern matching behavior, such as making it case-insensitive with the `i flag`.
 8. Character Escapes: The backslash `\`: Escape special characters (e.g., period) so they are treated as literals.
 
-By combining these components, the regex ensures proper structure and formality for email addresses, making it a valuable tool in a variety of applications throughout your academic and professional career. Upon completing this tutorial, you'll gain a greater knowledge and understanding of how regex functions to validate and confirm the entry of a valid email addresses.
+By combining these components, the regex ensures proper structure and formality for email addresses, making it a valuable tool in a variety of applications throughout your academic and professional career. Upon completion of this tutorial, you will have gained a greater knowledge and understanding of how a regex functions to validate and confirm the entry of a valid email addresses.
 
 ## Author
 
